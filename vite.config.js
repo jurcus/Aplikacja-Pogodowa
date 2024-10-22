@@ -1,11 +1,31 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import {defineConfig} from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import mkcert from 'vite-plugin-mkcert';
 
 export default defineConfig({
-  plugins: [react()],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: ['./src/setupTests.js'],
-  },
+    server: {
+        port: 3000,
+    },
+    plugins: [
+        react(),
+        mkcert({
+            source: 'coding',
+        }),
+    ],
+    base: '/',
+    publicDir: 'public',
+    build: {
+        cssMinify: 'lightningcss',
+        rollupOptions: {
+            output: {
+                manualChunks: {
+                    'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+                },
+            },
+            external: '/envConfig.js',
+        },
+    },
+    optimizeDeps: {
+        include: ['react/jsx-runtime'],
+    },
 });
