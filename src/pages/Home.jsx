@@ -1,5 +1,5 @@
 import './Home.css';
 
-export default function Home() {
+export function Home() {
     return <h1 className="header">Home</h1>;
 }

@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/Home';
-import Details from './pages/Details';
+import {Home} from './pages/Home';
+import {Details} from './pages/Details';
 import {Provider} from 'react-redux';
 import {store} from './store';
 
