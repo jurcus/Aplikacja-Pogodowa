@@ -84,5 +84,7 @@ W projekcie można wykorzystać różne biblioteki dedykowane dla ekosystemu Rea
 * [React Redux](https://react-redux.js.org/),
 * [Vite.js](https://vite.dev/guide/),
 * [Axios](https://github.com/axios/axios),
+* [Create React App](https://create-react-app.dev/),
+* [Szablony projektów opartych na React + Vite.js](https://github.com/vitejs/awesome-vite?tab=readme-ov-file#react),
 * [Dokumentacja biblioteki React](https://react.dev/),
 * [Dokumentacja MDN](https://developer.mozilla.org/en-US/).
