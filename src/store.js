@@ -2,8 +2,9 @@
 import {combineSlices, configureStore} from '@reduxjs/toolkit';
 import {setupListeners} from '@reduxjs/toolkit/query';
 import logger from 'redux-logger';
+import {weatherSlice} from './slices/weatherSlice';
 
-const rootReducer = combineSlices();
+const rootReducer = combineSlices(weatherSlice);
 
 const store = configureStore({
     reducer: rootReducer,
