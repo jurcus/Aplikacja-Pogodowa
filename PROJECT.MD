@@ -75,3 +75,14 @@ Aby uzyskać ocenę 3.0, nie trzeba korzystać z prawdziwych danych pogodowych, 
 ## Jak zacząć?
 
 Aplikacja stworzona w ramach kursu musi zostać wykonana przy pomocy biblioteki **React**. Istnieje dowolność co do konfiguracji projektu i zastosowanych bibliotek. Można również skorzystać, do czego zachęcam, z [przygotowanego szablonu projektu](https://github.com/JakubGogola-IDENTT/dsw-frontend-autumn-2024) dostępnego na moim GitHubie oraz na platformie Moodle w formie pliku w formacie ZIP. Projekt zawiera proponowaną strukturę oraz kilka zainstalowanych przydatnych bibliotek (szczegóły znajdują się w pliku [README](https://github.com/JakubGogola-IDENTT/dsw-frontend-autumn-2024/blob/main/README.md)).
+
+## Przydatne link
+
+W projekcie można wykorzystać różne biblioteki dedykowane dla ekosystemu React'a. Poniżej znajduje się kilka z nich (*dla chętnych*):
+
+* [TailwindCSS](https://tailwindcss.com/),
+* [React Redux](https://react-redux.js.org/),
+* [Vite.js](https://vite.dev/guide/),
+* [Axios](https://github.com/axios/axios),
+* [Dokumentacja biblioteki React](https://react.dev/),
+* [Dokumentacja MDN](https://developer.mozilla.org/en-US/).
