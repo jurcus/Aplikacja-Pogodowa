@@ -43,6 +43,8 @@ Poniżej znajdziecie jakie wymagania należy spełnić, aby uzyskać konkretną 
 * zastosowanie styli CSS do zdefiniowania wyglądu komponentów,
 * pełna obsługa błędów aplikacji,
 
+Aby uzyskać ocenę 3.0, nie trzeba korzystać z prawdziwych danych pogodowych, ale można jest *na sztywno* wpisać do aplikacji. Ważne jednak, aby każda z miejscowości prezentowała **inne warunki pogodowe**.
+
 ### 3.5
 
 * wszystkie wymagania na ocenę 3.0,
