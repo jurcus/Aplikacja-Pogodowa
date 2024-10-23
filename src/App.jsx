@@ -1,43 +1,27 @@
-import {useState} from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import {Provider} from 'react-redux';
+import {store} from './store';
+
 import './App.css';
 
-export default function App() {
-    const [count, setCount] = useState(0);
-
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <h1>Vite + React</h1>
-                <p>
-                    <button onClick={() => setCount(count => count + 1)}>
-                        count is {count}
-                    </button>
-                </p>
-                <p>
-                    Edit <code>App.jsx</code> and save to test HMR updates.
-                </p>
-                <p>
-                    <a
-                        className="App-link"
-                        href="https://react.dev"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Learn React
-                    </a>
-                    {' | '}
-                    <a
-                        className="App-link"
-                        href="https://vitejs.dev/guide/features.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        Vite Docs
-                    </a>
-                </p>
-            </header>
-        </div>
+        <Provider store={store}>
+            <Router>
+                <div className="App">
+                    <header>
+                        <h1>Weather App</h1>
+                    </header>
+                    <Routes>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/details" element={<Details />} />
+                    </Routes>
+                </div>
+            </Router>
+        </Provider>
     );
-}
+};
+
+export default App;
