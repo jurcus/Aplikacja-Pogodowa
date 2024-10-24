@@ -38,16 +38,16 @@ Poniżej znajdziecie jakie wymagania należy spełnić, aby uzyskać konkretną 
 
 * wszystkie wymgania funkcjonalne opisane w sekcji [Wymagania konieczne](#wymagania-konieczne),
 * użycie w aplikacji hook'ów takich jak `useState`, `useCallback`, `useMemo`, `useEffect`,
+* przełączanie pomiędzy szczegółowym widokiem dla każdej miejscowości za pomocą natywnych hooków (`useState`, `useReducer`),
 * tworzenie reużywalnych komponentów do powtarzalnych części kodu,
-* utowrzenie osobnych stron dla każdej z miejscowości przy użyciu biblioteki [React Router](https://reactrouter.com/en/main),
 * zastosowanie styli CSS do zdefiniowania wyglądu komponentów,
-* pełna obsługa błędów aplikacji,
 
 Aby uzyskać ocenę 3.0, nie trzeba korzystać z prawdziwych danych pogodowych, ale można jest *na sztywno* wpisać do aplikacji. Ważne jednak, aby każda z miejscowości prezentowała **inne warunki pogodowe**.
 
 ### 3.5
 
 * wszystkie wymagania na ocenę 3.0,
+* nawigacja pomiędzy poszczególnymi podstronami aplikacji przy użyciu biblioteki React Router [React Router](https://reactrouter.com/en/main),
 * użycie biblioteki [Redux](https://react-redux.js.org/) do globalnej zmiany jednostek temperatury (dla wszystkich podstron miejscowości),
 
 ### 4.0
@@ -65,11 +65,6 @@ Aby uzyskać ocenę 3.0, nie trzeba korzystać z prawdziwych danych pogodowych, 
 
 * wszystkie wymagania na ocenę 4.5,
 * integracja przy wykorzystaniu np. biblioteki [Axios](https://github.com/axios/axios), z OpenWeatherMap API i wyświetlanie rzeczywistych danych pogodowych dla miejscowości na liście,
-
-### 5.5
-
-* wszystkie wymagania na ocenę 5.0,
-* dodanie możliwości wyszukiwania pogody dla danej miejscowości spoza listy,
 
 
 ## Jak zacząć?
