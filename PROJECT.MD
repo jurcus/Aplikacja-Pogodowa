@@ -47,7 +47,7 @@ Aby uzyskać ocenę 3.0, nie trzeba korzystać z prawdziwych danych pogodowych, 
 ### 3.5
 
 * wszystkie wymagania na ocenę 3.0,
-* nawigacja pomiędzy poszczególnymi podstronami aplikacji przy użyciu biblioteki React Router [React Router](https://reactrouter.com/en/main),
+* nawigacja pomiędzy poszczególnymi podstronami aplikacji przy użyciu biblioteki [React Router](https://reactrouter.com/en/main),
 * użycie biblioteki [Redux](https://react-redux.js.org/) do globalnej zmiany jednostek temperatury (dla wszystkich podstron miejscowości),
 
 ### 4.0
