@@ -1,13 +1,55 @@
 body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-image: url('/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2); /* Utrzymujemy istniejące tło */
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif; /* Ustawiamy czcionkę spójną z resztą strony */
+  border: 1px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+  text-shadow: 1px 1px 3px black; /* Czarne obramowanie wokół tekstu */
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button:hover {
+  background: rgba(255, 255, 255, 0.4); /* Lżejsze tło na hover */
+  transform: scale(1.05); /* Powiększenie na hover */
 }
+form {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 14px;
+  text-shadow: 1px 1px 3px black;
+}
+
+form button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+

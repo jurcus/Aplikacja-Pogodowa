@@ -1,3 +1,181 @@
-.header {
-    color: #097969;
+/* Ogólne ustawienia dla strony */
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Czcionka dla nagłówków */
+  text-align: center;
+  background: url('/images/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
 }
+
+/* Nagłówki */
+h1 {
+  font-size: 56px; /* Napis "Aplikacja Pogodowa" */
+  margin: 10px 0;
+  font-weight: 600; /* Wyróżnienie (grubsza czcionka) */
+}
+
+h2 {
+  font-size: 44px; /* Napis "Lista miast" */
+  margin: 10px 0 20px 0;
+  font-weight: 400; /* Lżejszy styl */
+}
+
+/* Lista bez stylu */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%; /* Wysokość listy */
+  gap: 25px; /* Odstęp między przyciskami */
+}
+
+/* Stylizacja przycisków */
+a {
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie tekstu poziomo */
+  align-items: center; /* Wyśrodkowanie tekstu pionowo */
+  text-decoration: none;
+  color: white;
+  font-size: 32px; /* Rozmiar tekstu */
+  font-family: 'Roboto Slab', serif; /* Czcionka dla miast */
+  background-color: rgba(0, 0, 0, 0.3); /* Przezroczyste czarne tło */
+  width: 400px; /* Stała szerokość przycisków */
+  height: 80px; /* Stała wysokość przycisków */
+  border: 3px solid white; /* Grubsza ramka */
+  border-radius: 15px; /* Zaokrąglone rogi */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1); /* Powiększenie na hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Zmiana koloru na hover */
+}
+
+
+/* Wyeliminowanie suwaka */
+html, body {
+  height: 100%;
+  overflow: hidden; /* Usunięcie suwaka */
+}
+.details-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.details-subtitle {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin: 10px 0;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Odstęp między dniami */
+  margin-top: 20px;
+}
+
+.forecast-item {
+  border: 2px solid white; /* Wyraźniejsze obramowanie */
+  padding: 15px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1); /* Lekki kontrast z tłem */
+  font-weight: 600; /* Zwiększenie grubości czcionki */
+  font-size: 16px; /* Lekko powiększony rozmiar tekstu */
+  color: white;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  width: 180px; /* Stała szerokość */
+  height: 260px; /* Stała wysokość */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Równomierne rozmieszczenie zawartości */
+  align-items: center;
+  overflow: hidden; /* Ukrycie ewentualnego nadmiaru treści */
+}
+.forecast-item p {
+  margin: 5px 0; /* Równy margines dla tekstu */
+  flex: 1; /* Pozwolenie na dynamiczne rozszerzanie */
+}
+.forecast-item:hover {
+  transform: scale(1.1); /* Powiększenie na hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Przejrzyste tło jak w innych */
+  color: white; /* Utrzymanie białego koloru tekstu */
+}
+.forecast-item img {
+  width: 50px; /* Rozmiar ikony */
+  height: auto;
+  margin-top: 10px;
+  flex-shrink: 0; /* Zapobiega zmniejszaniu ikony */
+  align-self: center; /* Wyśrodkowanie ikony */
+}
+.forecast-item h3 {
+  font-size: 18px; /* Większe nagłówki */
+  font-weight: 700; /* Grubsze nagłówki */
+}
+h1, h2, .details-title, .details-subtitle, a, .forecast-item, .forecast-item h3 {
+  text-shadow: 1px 1px 3px black !important; /* Czarny cień wokół tekstu z większym priorytetem */
+  color: white !important; /* Upewnij się, że tekst jest biały */
+}
+h2, h3, p, .forecast-item, .forecast-item p {
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+.weather-text {
+  text-shadow: 1px 1px 3px black;
+  color: white;
+}
+/* Stylizacja przycisków dla listy miast i Ulubione Miasta */
+a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-size: 32px; /* Rozmiar tekstu */
+  font-family: 'Roboto Slab', serif; /* Czcionka */
+  background-color: rgba(0, 0, 0, 0.3); /* Przezroczyste czarne tło */
+  width: 400px; /* Stała szerokość przycisków */
+  height: 80px; /* Stała wysokość przycisków */
+  border: 3px solid white; /* Grubsza ramka */
+  border-radius: 15px; /* Zaokrąglone rogi */
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+a:hover {
+  transform: scale(1.1); /* Powiększenie na hover */
+  background-color: rgba(255, 255, 255, 0.2); /* Zmiana koloru na hover */
+}
+
+/* Wyśrodkowanie tekstu na stronie */
+h1 {
+  font-size: 56px;
+  margin: 10px 0;
+  font-weight: 600;
+  text-align: center;
+  text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+  font-size: 44px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+

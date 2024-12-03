@@ -1,0 +1,97 @@
+.favorites-container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Roboto Slab', serif; /* Czcionka dla całego kontenera */
+}
+
+h1 {
+    font-size: 52px;
+    margin: 10px 0; /* Zmniejszony margines */
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Roboto Slab', serif; /* Czcionka nagłówka */
+}
+
+.no-favorites {
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Roboto Slab', serif; /* Czcionka dla tekstu bez ulubionych */
+    margin: 10px 0; /* Zmniejszony margines */
+}
+
+.favorite-list {
+    margin-top: 10px; /* Zmniejszony odstęp między elementami */
+    font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Roboto Slab', serif; /* Czcionka dla listy ulubionych */
+}
+
+.favorite-text {
+    margin: 0 5px;
+    font-family: 'Roboto Slab', serif; /* Czcionka dla pojedynczych miast w ulubionych */
+}
+
+.city-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px; /* Zmniejszony margines */
+}
+
+.city-card {
+    background: rgba(0, 0, 0, 0.3); /* Tło prostokąta */
+    padding: 15px 30px; /* Wypełnienie */
+    border: 3px solid white; /* Obramowanie */
+    border-radius: 20px; /* Zaokrąglenie rogów */
+    color: white; /* Kolor tekstu */
+    font-size: 34px; /* Rozmiar czcionki */
+    display: flex; /* Elastyczny układ */
+    justify-content: space-between; /* Rozkład tekstu i gwiazdki na boki */
+    align-items: center; /* Wyśrodkowanie pionowe tekstu i gwiazdki */
+    text-shadow: 1px 1px 3px black; /* Cień dla tekstu */
+    width: 300px; /* Stała szerokość */
+    font-family: 'Roboto Slab', serif; /* Czcionka prostokąta miast */
+    margin: 5px 0; /* Zmniejszony margines */
+}
+
+.favorite-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+    color: rgb(255, 208, 0);
+}
+.filter-input {
+    margin: 20px 0;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .filter-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .filter-input:focus {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  

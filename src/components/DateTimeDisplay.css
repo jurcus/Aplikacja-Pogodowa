@@ -1,0 +1,22 @@
+.date-time-container {
+    position: fixed;
+    top: 0px; /* Oddalenie od górnej krawędzi */
+    right: 20px; /* Oddalenie od prawej krawędzi */
+    color: white;
+    text-align: right;
+    font-family: 'Roboto Slab', serif; /* Pasująca czcionka */
+    text-shadow: 1px 1px 3px black; /* Cienie */
+    z-index: 1000; /* Na wierzchu */
+  }
+  
+  .date-time-header {
+    font-size: 26px; /* Powiększony nagłówek */
+    margin-bottom: 5px;
+    font-weight: bold; /* Pogrubienie nagłówka */
+  }
+  
+  .date-time-display {
+    font-size: 18.5px; /* Data i czas */
+    font-weight: normal; /* Normalna grubość dla daty i czasu */
+  }
+  
